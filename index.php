@@ -4,6 +4,7 @@
  * User: raid
  * Date: 2016/7/6
  * Time: 12:03
+ * tttttttttttttttttttttttttttttt
  */
 
 $m = new Memcached;
@@ -22,6 +23,7 @@ $data = array(
     'key' => 'value',
     'key2' => 'value2',
 );
+
 //$m->setMulti($data, 600);
 $result = $m->getMulti(array('key', 'key2'));
 $m->deleteMulti(array('key', 'key2'));
